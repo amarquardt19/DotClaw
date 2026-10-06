@@ -1,0 +1,46 @@
+# Secrets
+.env
+.env.*
+*.secret
+secrets/
+
+# Data / outputs
+data/
+output/
+*.xlsx
+*.csv
+*.jsonl
+*.md
+
+# Local databases and state
+*.db*
+*.json
+*.log
+*.txt
+!requirements.txt
+
+# Notebooks / HTML dumps
+*.ipynb
+*.html
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# macOS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Service / vendor directories
+.netlify/
+.playwright/
+checkout_logs/
+inbox/
+secure_checkout/
+uber/
+vercel-oauth-site/

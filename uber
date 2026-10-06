@@ -1,0 +1,11 @@
+#!/bin/bash
+# Simple Uber CLI - just pass your ride command
+# Usage: ./uber uberx home to sfo
+# Usage: ./uber uberxl 2835 clay street to greek theater berkeley
+
+cd "$(dirname "$0")"
+python3 scripts/uber_playwright_attach.py \
+  --cdp-url http://127.0.0.1:18801 \
+  --ride-command "$*" \
+  --extract-fares \
+  --select-ride "${1:-uberx}"
